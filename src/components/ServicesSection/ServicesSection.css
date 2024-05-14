@@ -1,0 +1,83 @@
+#ServicesSection {
+    background: var(--myGray) url(/services/dots.png) top right no-repeat;
+    min-height: 100dvh;
+    height: fit-content;
+    width: 100%;
+    background-size: 100vh;
+}
+
+#ServicesSection>.myContainer>h6 {
+    color: var(--myRed);
+    text-transform: capitalize;
+    padding: 0 10px;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+#ServicesSection>.myContainer>h6::before,
+#ServicesSection>.myContainer>h6::after {
+    position: absolute;
+    background-color: var(--myRed);
+    height: 70%;
+    display: block;
+    top: 55%;
+    transform: translateY(-50%);
+    content: '';
+    padding: 1px;
+}
+
+#ServicesSection>.myContainer>h6::before {
+    right: 0;
+}
+
+#ServicesSection>.myContainer>h6::after {
+    left: 0;
+}
+
+.myContainer {
+    max-width: 1920px;
+}
+
+.services-card-wrapper>div {
+    background-color: white;
+    padding: 30px;
+    padding-top: 60px;
+    position: relative;
+    width: 360px;
+    margin-bottom: 20px;
+}
+
+.services-card-wrapper>div>p {
+    color: var(--myGray);
+}
+
+.services-card-wrapper>div>div>.link {
+    color: var(--myRed);
+    text-decoration: none;
+    width: fit-content;
+    font-weight: 600;
+}
+
+.services-card-wrapper>div>div>img {
+    width: 22px;
+}
+
+.services-card-wrapper>div>figure {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--myRed);
+    position: absolute;
+    top: -30px;
+    left: 20px;
+}
+
+.services-card-wrapper>div>figure>img {
+    width: 65%;
+    height: 65%;
+}

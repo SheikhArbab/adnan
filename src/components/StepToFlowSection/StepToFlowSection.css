@@ -1,0 +1,109 @@
+#StepToFlowSection {
+    background: var(--myGray);
+    min-height: 100dvh;
+    height: fit-content;
+    width: 100%;
+    background-size: 100vh;
+}
+
+#StepToFlowSection>.myContainer>h6 {
+    color: var(--myRed);
+    text-transform: capitalize;
+    padding: 0 10px;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+#StepToFlowSection>.myContainer>h6::before,
+#StepToFlowSection>.myContainer>h6::after {
+    position: absolute;
+    background-color: var(--myRed);
+    height: 70%;
+    display: block;
+    top: 55%;
+    transform: translateY(-50%);
+    content: '';
+    padding: 1px;
+}
+
+#StepToFlowSection>.myContainer>h6::before {
+    right: 0;
+}
+
+#StepToFlowSection>.myContainer>h6::after {
+    left: 0;
+}
+
+.StepToFlowSection-card {
+    width: 320px;
+    height: 380px;
+}
+
+.StepToFlowSection-card>div {
+    background-color: white;
+    padding: 20px 10px;
+    width: 100%;
+    height: 70%;
+    transition: all .4s;
+    position: relative;
+}
+
+.StepToFlowSection-card>div>i {
+    position: absolute;
+    clip-path: polygon(48% 20%, 0% 100%, 100% 100%);
+    background-color: var(--myRed);
+    padding: 10px;
+    top: -18px;
+    opacity: 0;
+    transition: all .1s;
+}
+
+.StepToFlowSection-card>div:hover {
+    background-color: var(--myRed);
+}
+
+.StepToFlowSection-card>div:hover i {
+    opacity: 1;
+}
+
+.StepToFlowSection-card>div:hover h1:first-child,
+.StepToFlowSection-card>div:hover p,
+.StepToFlowSection-card>div:hover h1 {
+    color: white;
+}
+
+.StepToFlowSection-card>div>h1:first-child {
+    color: var(--myRed);
+    font-weight: bold;
+}
+
+.StepToFlowSection-card>div>h1:nth-child(2) {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.StepToFlowSection-card>div>p {
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+    margin: 10px 0;
+    transition: all .4s;
+}
+
+.StepToFlowSection-card>figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--myRed);
+    width: 90px;
+    height: 90px;
+}
+
+.StepToFlowSection-card>figure>img {
+    width: 60%;
+    height: 60%;
+}
